@@ -1,0 +1,70 @@
+---
+name:  RCI
+title: Reliable Change Index
+menuGroup: LogisticRCI
+version: '1.0.0'
+jas: '1.2'
+
+options:
+    - name: data
+      type: Data
+
+    - name: dep
+      title: Dependent Variable
+      type: Variable
+
+    - name: predictors
+      title: Independent Variables
+      type: Variables
+
+    - name: id
+      title: Individual ID
+      type: Variable
+
+    - name: group
+      title: Grouping Variable
+      type: Variable
+      
+    - name: refgroup
+      title: Reference Group
+      type: Integer
+      min: -10000000
+      max: 10000000
+
+    - name: newgroup
+      title: Test Group
+      type: Integer
+      min: -10000000
+      max: 10000000
+
+    - name: maximum
+      title: Maximum Score
+      type: Integer
+      min: 0
+      max: 1000000
+      
+    - name: regtype
+      title: Regression Type
+      type: List
+      options:
+        - name: linear
+          title: Linear regression
+        - name: logistic
+          title: Logistic regression
+      default: logistic
+      
+    - name: percentile
+      title: Percentile
+      type: List
+      options:
+        - name: ten
+          title: 10%
+        - name: five
+          title: 5%
+        - name: two
+          title: 2.5%
+          
+    - name: rciOV
+      title: Add RCI as a column to the dataset
+      type: Output
+...

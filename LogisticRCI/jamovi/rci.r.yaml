@@ -1,0 +1,49 @@
+---
+name:  RCI
+title: Reliable Change Index
+jrs:   '1.1'
+
+items:
+    - name:  citation
+      title: Citation
+      type:  Preformatted
+    
+    - name:  modelsummary
+      title: Summary of the model object
+      type:  Preformatted
+    
+    - name:  anovaresults
+      title: F-tests
+      type:  Preformatted
+
+    - name:  scores
+      title: RCI scores for reference group
+      type:  Preformatted
+
+    - name:  nbelow
+      title: Number of individuals in reference group presenting reliable decline
+      type:  Preformatted
+
+    - name:  IDbelow
+      title: Individuals in reference group presenting reliable decline
+      type:  Preformatted
+
+    - name:  newscores
+      title: RCI scores for test group
+      type:  Preformatted
+
+    - name:  newnbelow
+      title: Number of individuals in test group presenting reliable decline
+      type:  Preformatted
+
+    - name:  newIDbelow
+      title: Individuals in test group presenting reliable decline
+      type:  Preformatted
+      
+    - name: rciOV
+      title: RCI
+      type: Output
+      varTitle: RCI
+      varDescription: Calculated RCI
+      measureType: continuous
+...
